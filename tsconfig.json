@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "typeRoots": [
-      "node_modules/@types",
-      "./"
+      "node_modules/@types"
     ],
     "types": [
-      "winjs",
-      "declarations"
+      "jquery",
+      "owlcarousel"
     ],
-    "target": "ES6",
+    "target": "ES5",
     "rootDir": "./",
     "noImplicitAny": true,
     "removeComments": false,
