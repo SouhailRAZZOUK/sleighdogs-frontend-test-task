@@ -10,9 +10,7 @@ Used technologies:
 
 Frameworks:
 
-- [WinJS](http://try.buildwinjs.com) a framework made by Microsoft Open Source Technologies for managing the app code, and UI/UX ergonomy.
-- [LeafletJS](http://leafletjs.com/)
-- OSM: [OpenStreetMaps](http://www.openstreetmap.org/)
+- [OwlCarousel2](https://owlcarousel2.github.io/OwlCarousel2/): Carousel for the website
 
 Workflow and Development tools:
 
