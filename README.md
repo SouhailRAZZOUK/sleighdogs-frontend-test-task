@@ -21,7 +21,7 @@ Workflow and Development tools:
 
 ## How To Use:
 
-**Note**: *Pre-Builded code is ignored from the repository*
+**Note**: *Pre-Built code is ignored from the repository*
 
 In your Commande line run the following commands, and please respect the order. 
 
