@@ -38,6 +38,10 @@ body{
 #featured-products{
   position: relative;
 
+  #featured-products-carousel{
+    margin: 10px 0 0;    
+  }
+
   .product-details{
     display: flex;
     flex-flow: row wrap;
