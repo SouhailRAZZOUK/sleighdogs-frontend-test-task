@@ -6,7 +6,7 @@ Used technologies:
 
 - HTML5 pre-processor: [Pug](https://pugjs.org/)
 - CSS pre-processor: [SASS](https://sass-lang.com/) 
-- Javascript pre-processor: [TypeScript]()
+- Javascript pre-processor: [TypeScript](http://www.typescriptlang.org/) as the project was not very depending on javascript, I used TypeScript for the sake of speeding up.
 
 Frameworks:
 
