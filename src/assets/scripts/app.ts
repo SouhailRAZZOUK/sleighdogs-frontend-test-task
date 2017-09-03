@@ -1,6 +1,10 @@
-$(document).ready(() =>
-  $("#featured-products-carousel").owlCarousel({
+$(document).ready(() => {
+
+  let featuredProductsCarousel = $("#featured-products-carousel");
+
+  featuredProductsCarousel.owlCarousel({
     margin: 15,
+    loop: true,
     responsiveClass: true,
     nav: false,
     responsive: {
@@ -17,5 +21,9 @@ $(document).ready(() =>
         items: 4,
       }
     }
-  })
-);
+  });
+
+  $("#carousel-next").click(() => featuredProductsCarousel.trigger("next.owl.carousel"))
+  $("#carousel-prev").click(() => featuredProductsCarousel.trigger("prev.owl.carousel"))
+
+});
