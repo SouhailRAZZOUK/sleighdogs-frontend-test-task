@@ -1,0 +1,144 @@
+// App agnostic files (partials), they contain some sort of "rests" and very broad generalities in styles
+@import "settings";
+@import "fonts";
+@import "type";
+@import "layout";
+
+// App styles
+body{
+  background: rgb(254, 252, 243);
+}
+
+#hero{
+  background: url("/assets/images/hero-background.png") no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  height: 100%;
+  
+  @media #{$large-devices-and-up} {
+    background-size: 100% auto;
+  }
+
+  .hero-text{
+    display: inline-block;
+    padding: 0 20px;
+    max-width: 350px;
+    background: rgba(255,255,255,.7);
+    position: relative;
+    top: calc(50% - 32px);
+
+    h1{
+      font-size: 1.74em;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+  }
+}
+
+#featured-products{
+
+  .product-details{
+    display: flex;
+    flex-flow: row wrap;
+    font-size: .8em;
+
+    .product-title{
+      flex-grow: 3;
+      align-self: baseline;
+    }
+    .product-price{
+      flex-grow: 1;
+      text-align: right;
+      line-height: 4;
+    }
+    .product-description{
+      flex-grow: 4;
+      align-self: flex-end;
+      margin-top: 0;
+    }
+  }
+
+  #shop-range-link{
+    display: block;
+    height: 30px;
+    max-width: 320px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0,0,0);
+    font-size: .7em;
+    line-height: 2.5;
+    text-align: center;
+    margin: 10px auto;
+    background: rgb(209, 237, 217);
+  }
+}
+
+#news-and-resource{
+  .news{
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    
+    @media #{$medium-devices-and-up} {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    @media #{$large-devices-and-up} {
+      flex-wrap: nowrap;
+    }
+
+    .news-card{
+      flex-grow: 1;
+      width: 100%;
+      padding: 0;
+      margin: 10px 0;
+      box-sizing: border-box;
+
+      @media #{$medium-devices-and-up} {
+        width: 50%;
+        &:nth-of-type(2n){
+          // added !important to override the padding: 0 in the case of last element been pair
+          padding: 0 0 0 5px !important;
+        }
+        &:nth-of-type(2n+1){
+          padding: 0 5px 0 0;
+        }
+        &:last-of-type{
+          padding: 0;
+        }
+      }
+
+      @media #{$large-devices-and-up} {
+        width: auto;
+        // added !important (both) to override the previous one effect
+        &:not(:last-of-type){
+          padding: 0 15px 0 0 !important;
+        }
+        &:last-of-type{
+          padding-left: 0 !important;
+        }
+      }
+
+
+      img{
+        width: 100%;
+      }
+
+      h3{
+        font-size: .8em;
+      }
+
+      p{
+        font-size: .8em;
+      }
+
+      .read-more-link{
+        color: rgb(144, 141, 144);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .6em;
+      }
+    }
+  }
+}

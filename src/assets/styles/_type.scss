@@ -1,0 +1,13 @@
+body{
+  font-size: $font-size-base;
+}
+section{
+  a, p, span, h1, h2, h3, h4{
+    font-family: $font-familly-BreeSerif-Regular;
+  }
+  h2{
+    font-size: 1.13em;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}

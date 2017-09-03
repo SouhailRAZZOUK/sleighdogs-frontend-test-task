@@ -1,0 +1,14 @@
+section#news-and-resource
+  .content
+    h2 News and resource
+
+    //- dump content generation loop
+    .news
+      - var i = 0;
+      while i<3
+        .news-card 
+          img(src="/assets/images/lion.png")
+          h3 News title
+          p Praesent pulvinar sapien fermentum, faucibus diam congue, ultricies turpis.
+          a.read-more-link(href="#") Read more
+        - i++

@@ -1,0 +1,20 @@
+section#featured-products
+  .content
+    h2 Featured products
+
+    #featured-products-carousel.owl-carousel.owl-theme
+      - var j=0;
+      while j<10
+        .product-card
+          img(src="/assets/images/white.png")
+          .product-details
+            h4.product-title Product Title
+            span.product-price 14.95 €
+            p.product-description Lorem ipsum sit dolor amet lorem ipsum sit dolor
+
+        - j++;
+
+    span#carousel-next
+    span#carousel-prev
+
+    a#shop-range-link(href="#") Shop the range

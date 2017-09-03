@@ -1,0 +1,29 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+section{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.content{
+  display: block;
+  width: 100%;
+  max-width: 1024px;
+  padding: 20px 15px;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  
+  @media #{$extra-large-devices-and-up} {
+    padding: 35px 0;
+  }
+
+  h2{
+    margin-bottom: 25px;
+  }
+
+}
