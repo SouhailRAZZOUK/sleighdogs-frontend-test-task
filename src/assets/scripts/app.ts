@@ -23,7 +23,7 @@ $(document).ready(() => {
     }
   });
 
-  $("#carousel-next").click(() => featuredProductsCarousel.trigger("next.owl.carousel"))
-  $("#carousel-prev").click(() => featuredProductsCarousel.trigger("prev.owl.carousel"))
+  $("#carousel-next").click(() => featuredProductsCarousel.trigger("next.owl.carousel"));
+  $("#carousel-prev").click(() => featuredProductsCarousel.trigger("prev.owl.carousel"));
 
 });
