@@ -1,5 +1,12 @@
 body{
-  font-size: $font-size-base;
+  
+  @media #{$small-devices-and-up} {
+    font-size: $font-size-base - 2;
+  }
+
+  @media #{$medium-devices-and-up} {
+    font-size: $font-size-base;
+  }
 }
 section{
   a, p, span, h1, h2, h3, h4{
