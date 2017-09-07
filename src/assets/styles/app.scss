@@ -85,16 +85,16 @@ body{
     right: 0;
     background-image: url("../images/right-arrow.png");
 
-    @media #{$extra-large-devices-and-up} {
-      right: calc(50% - 570px);
+    @media (min-width: 1200px) {
+      right: calc(50% - 590px);
     }
   }
   #carousel-prev{
     left: 0;
     background-image: url("../images/left-arrow.png");
 
-    @media #{$extra-large-devices-and-up} {
-      left: calc(50% - 570px);
+    @media (min-width: 1200px) {
+      left: calc(50% - 590px);
     }
   }
 
@@ -108,7 +108,7 @@ body{
     font-size: .7em;
     line-height: 2.5;
     text-align: center;
-    margin: 10px auto;
+    margin: 15px auto 0;
     background: rgb(209, 237, 217);
   }
 }

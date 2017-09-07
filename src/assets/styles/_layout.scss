@@ -19,9 +19,9 @@ section{
   box-sizing: border-box;
   
   @media #{$extra-large-devices-and-up} {
-    padding: 35px 0;
+    padding: 35px 0 20px;
   }
-
+  
   h2{
     margin-bottom: 25px;
   }
